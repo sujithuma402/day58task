@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "day58task/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "day58task/wsgi.py"
+    }
+  ]
+}
